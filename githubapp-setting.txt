@@ -1,0 +1,19 @@
+successRedirect : url of your frontend application (means url of page where you redirected to the user.)
+failureRedirect : url of your frontend application (url of page where you want to send the user after failure) 
+
+
+export COMPOSER_PROVIDERS='{
+  "github": {
+    "provider": "github",
+    "module": "passport-github",
+    "clientID": "79fe7735b03249ddb8d1", 
+    "clientSecret": "33e64c4255126a52beef8a3936891fcff886c877",
+    "authPath": "/oauth/github",
+    "callbackURL": "/oauth/github/callback",
+    "successRedirect": "/",
+    "failureRedirect": "/"
+  }
+}'
+
+
+https://hyperledger.github.io/composer/latest/managing/identity-issue
