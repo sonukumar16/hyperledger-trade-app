@@ -1,0 +1,2 @@
+TO add a participant :- 
+composer participant add -c admin@tutorial-network -d '{"$class": "org.example.mynetwork.Trader","tradeId": "TRADER6","firstName": "Lars","lastName": "Graf"}'

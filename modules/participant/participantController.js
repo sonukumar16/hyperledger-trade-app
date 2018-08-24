@@ -10,5 +10,26 @@ class ParticipantCtrl extends Methods {
             throw new Error(err);
         }
     }
+    
+    async identityList(req,res){
+        try {
+            let result = await super.identityList();
+            console.log("identityList of Participant Controller ::::::::::::::::::::::::", result)
+            return res.send(result)
+        } catch (err) {            
+            console.log("Error of identityList ::::::::::::::::::::::::", err);
+            throw new Error(err);
+        }
+    }
+    async testConnection(req,res){
+        try {
+            let result = await super.testConnection(req.body);
+            console.log("testConnection of Participant Controller ::::::::::::::::::::::::", result)
+            return res.send(result)
+        } catch (err) {            
+            console.log("Error of testConnection ::::::::::::::::::::::::", err);
+            throw new Error(err);
+        }
+    }
 }
 module.exports = ParticipantCtrl;

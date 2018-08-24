@@ -1,0 +1,9 @@
+To issue the identity for a participant:- 
+
+command :-  composer identity issue -c admin@tutorial-network -f TRADER4.card -u TRADER4 -a "resource:org.example.mynetwork.Trader#TRADER4"
+Here TRADER4 is the id of paticipant.
+
+To List the identity registry
+command :- composer identity list -c admin@tutorial-network  //( admin@tutorial-network is cardname)
+
+

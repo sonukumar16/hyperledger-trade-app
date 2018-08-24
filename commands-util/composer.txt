@@ -1,0 +1,2 @@
+composer card import -f maeid1@network.card  // import the card to composer
+composer network ping -c maeid1@network // check the connection of card
